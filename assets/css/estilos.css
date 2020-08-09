@@ -2,6 +2,10 @@ body{
     font-family: 'Caladea', serif;
     box-sizing: border-box;
 }
+*::selection{
+    background-color: gold;
+    color: greenyellow;
+}
 .navbar-brand {   
 font-family: 'Cinzel', serif;
 font-size: x-large !important;
@@ -68,4 +72,45 @@ footer {
 .karousel{
     max-height: 50%;
 }
-
+.fotos{
+    width: inherit;
+    height: 400px;
+}
+/*____________________ formmmmm_____________________*/
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    
+}
+input, textarea{
+    margin: 0 30%;
+    width: 40%;
+    border-radius: 10px;
+    border: darkturquoise solid 2px;
+    padding: 0 1rem;
+}
+#submit{
+    width: 16%;
+    margin: 0 42%;
+    background-color: darkturquoise;
+    color: white;
+}
+input:focus,textarea:focus{
+    border: 3px solid gold;
+    border-radius: 0;
+}
+legend{
+    background-color: darkturquoise;
+    color: white;
+    text-transform: lowercase;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+    position: relative;
+    right: 18rem;
+    width: 400px;
+}
+legend::first-letter{
+    text-transform: uppercase;
+}
